@@ -8,4 +8,10 @@ export enum COLORS {
 
 export enum SIZES {
   GUTTER = 10,
+  BASE_FONT = 14,
+  MEDIUM_FONT = 20,
+}
+
+export enum FONT_WEIGHT {
+  BOLD = '600',
 }
