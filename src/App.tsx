@@ -1,12 +1,13 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native';
+import { LoginScreen } from './screens';
 
 const App = () => {
-    return (
-      <View>
-        <Text>Hello World</Text>
-      </View>
-    )
-  };
+  return (
+    <SafeAreaView>
+      <LoginScreen/>
+    </SafeAreaView>
+  );
+};
 
 export default App;
