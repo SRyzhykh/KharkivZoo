@@ -15,3 +15,8 @@ export enum SIZES {
 export enum FONT_WEIGHT {
   BOLD = '600',
 }
+
+export enum SCREENS {
+  LOGIN = 'Login',
+  MAIN = 'Main',
+}

@@ -1,16 +1,21 @@
 import React from 'react';
-import { View } from 'react-native';
+import { ImageBackground } from 'react-native';
 import { BaseButton } from '../../components/button/BaseButton';
 import { BaseInput } from '../../components/input/BaseInput';
-import { COLORS } from '../../constants';
+import { COLORS, SCREENS } from '../../constants';
 import { styles } from './LoginScreen.styles';
 
-export const LoginScreen = () => {
+export const LoginScreen = ({ navigation }) => {
   return (
-    <View style={styles.container}>
+    <ImageBackground
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+      source={require('../../assets/background.jpg')}
+      resizeMode="stretch"
+      style={styles.container}
+    >
       <BaseInput placeholder="Логін" placeholderTextColor={COLORS.SECONDARY} />
       <BaseInput placeholder="Пароль" placeholderTextColor={COLORS.SECONDARY} />
-      <BaseButton text="Увійти" style={styles.button} />
-    </View>
+      <BaseButton text="Увійти" style={styles.button} onPress={() => navigation.navigate(SCREENS.MAIN)}/>
+    </ImageBackground>
   );
 };

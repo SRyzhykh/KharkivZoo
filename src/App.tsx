@@ -1,21 +1,8 @@
 import React from 'react';
-import { ImageBackground, SafeAreaView } from 'react-native';
-import { LoginScreen } from './screens';
-import { styles } from './app.styles';
+import { MainStackNavigator } from './navigation/';
 
 const App = () => {
-  return (
-    <ImageBackground
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-      source={require('./assets/background.jpg')}
-      resizeMode="stretch"
-      style={styles.container}
-    >
-      <SafeAreaView style={styles.container}>
-        <LoginScreen />
-      </SafeAreaView>
-    </ImageBackground>
-  );
+  return <MainStackNavigator />;
 };
 
 export default App;
