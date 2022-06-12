@@ -25,7 +25,15 @@ export const MenuStackNavigator = () => {
         name={SCREENS.MAIN}
         component={MainScreen}
       />
-      <Tab.Screen name={SCREENS.SCANER} component={ScanerScreen} />
+      <Tab.Screen
+        options={{
+          tabBarIcon: () => (
+            <Icon size={30} color={COLORS.ICON} name="qrcode" />
+          ),
+        }}
+        name={SCREENS.SCANER}
+        component={ScanerScreen}
+      />
     </Tab.Navigator>
   );
 };

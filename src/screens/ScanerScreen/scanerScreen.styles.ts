@@ -6,5 +6,12 @@ export const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
+    alignItems: 'center',
+  },
+  text: {
+    position: 'absolute',
+    bottom: 60,
+    fontSize: 30,
+    fontWeight: 'bold',
   },
 });

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Text, View } from 'react-native';
 import { styles } from './scanerScreen.styles';
 import QRCodeScanner from 'react-native-qrcode-scanner';
 import { Linking } from 'react-native';
@@ -15,6 +15,7 @@ export const ScanerScreen = () => {
   return (
     <View style={styles.container}>
       <QRCodeScanner onRead={onSuccess} />
+      <Text style={styles.text}>Put QR code into scanner</Text>
     </View>
   );
 };
