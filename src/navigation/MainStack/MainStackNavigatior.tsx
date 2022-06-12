@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { COLORS, SCREENS } from '../../constants';
 import { LoginScreen, MainScreen } from '../../screens';
+import { MenuStackNavigator } from '../MenuStack/MenuStack';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,13 +18,14 @@ export const MainStackNavigator = () => {
       >
         <Stack.Screen name={SCREENS.LOGIN} component={LoginScreen} />
         <Stack.Screen
-          name={SCREENS.MAIN}
-          component={MainScreen}
+          name={SCREENS.TABS}
+          component={MenuStackNavigator}
           options={{
             headerStyle: {
               backgroundColor: COLORS.CARD,
             },
             headerTintColor: COLORS.LIGHT,
+            headerShown: false,
           }}
         />
       </Stack.Navigator>

@@ -19,7 +19,7 @@ export const LoginScreen: React.FC<LoginProps> = ({ navigation }) => {
       <BaseButton
         text="Увійти"
         style={styles.button}
-        onPress={() => navigation.navigate(SCREENS.MAIN)}
+        onPress={() => navigation.navigate(SCREENS.TABS)}
       />
     </ImageBackground>
   );

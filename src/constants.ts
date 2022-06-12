@@ -29,4 +29,6 @@ export enum FONT_WEIGHT {
 export enum SCREENS {
   LOGIN = 'Login',
   MAIN = 'Main',
+  TABS = 'Tabs',
+  SCANER = 'Scaner',
 }

@@ -3,7 +3,6 @@ import { SafeAreaView, View } from 'react-native';
 import { AnimalCard } from './components';
 import { InfoBoard } from './components/InfoBoard/InfoBoard';
 import { styles } from './mainScreen.styles';
-
 const data = [
   {
     name: 'globe',
