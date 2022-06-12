@@ -6,7 +6,12 @@ export const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
   },
-  flexSize: {
+  infoContainer: {
+    flex: 1,
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+  },
+  cardContainer: {
     flex: 1,
   },
 });

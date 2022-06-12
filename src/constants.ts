@@ -8,6 +8,8 @@ export enum COLORS {
   CARD = '#02471D',
   PROGRESS_BACKGROUND = '#232b48',
   PROGRESS_BAR = '#5560ed',
+  ICON = '#016860',
+  INFO_BOARD = '#F0F5F2',
 }
 
 export enum SIZES {

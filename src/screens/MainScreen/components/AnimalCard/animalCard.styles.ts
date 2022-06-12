@@ -8,11 +8,11 @@ export const styles = StyleSheet.create({
     borderBottomStartRadius: 30,
     paddingBottom: 20,
     width: '100%',
-    paddingHorizontal: SIZES.GUTTER,
+    paddingHorizontal: SIZES.GUTTER * 2,
   },
   progressBar: {
     position: 'absolute',
-    bottom: 0,
+    bottom: -7,
     alignSelf: 'center',
   },
   progressContainer: {

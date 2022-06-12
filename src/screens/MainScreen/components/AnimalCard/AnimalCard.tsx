@@ -34,7 +34,7 @@ export const AnimalCard: React.FC<Props> = ({ style }) => {
   return (
     <View style={[styles.cardContainer, style]}>
       <Text style={styles.header}>Досліджуйте Харківський зоопарк</Text>
-      <View style={styles.carousel} >
+      <View style={styles.carousel}>
         <Carousel
           loop={false}
           width={600}
