@@ -5,6 +5,9 @@ export enum COLORS {
   SECONDARY = '#fff6b6',
   WARNING = '#ffd6c6',
   DISABLED = '#bebebe',
+  CARD = '#02471D',
+  PROGRESS_BACKGROUND = '#232b48',
+  PROGRESS_BAR = '#5560ed',
 }
 
 export enum SIZES {
@@ -12,8 +15,9 @@ export enum SIZES {
   BASE_FONT = 14,
   MEDIUM_FONT = 20,
   LARGE_FONT = 24,
-  BAR_HEIGHT = 40,
-  POP_SIZE = 60,
+  BAR_HEIGHT = 20,
+  POP_HEIGHT = 220,
+  POP_WIDTH = 160,
 }
 
 export enum FONT_WEIGHT {

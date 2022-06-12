@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { SCREENS } from '../../constants';
+import { COLORS, SCREENS } from '../../constants';
 import { LoginScreen, MainScreen } from '../../screens';
 
 const Stack = createNativeStackNavigator();
@@ -16,7 +16,16 @@ export const MainStackNavigator = () => {
         }}
       >
         <Stack.Screen name={SCREENS.LOGIN} component={LoginScreen} />
-        <Stack.Screen name={SCREENS.MAIN} component={MainScreen} />
+        <Stack.Screen
+          name={SCREENS.MAIN}
+          component={MainScreen}
+          options={{
+            headerStyle: {
+              backgroundColor: COLORS.CARD,
+            },
+            headerTintColor: COLORS.LIGHT,
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

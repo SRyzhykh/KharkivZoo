@@ -5,16 +5,14 @@ export const styles = StyleSheet.create({
   progressBar: {
     height: '100%',
     width: '80%',
-    backgroundColor: COLORS.MAIN_LIGHT,
+    backgroundColor: COLORS.PROGRESS_BAR,
     borderRadius: 10,
   },
   progressContainer: {
-    borderColor: COLORS.MAIN,
-    borderWidth: 2,
     height: SIZES.BAR_HEIGHT,
-    backgroundColor: COLORS.LIGHT,
+    backgroundColor: COLORS.PROGRESS_BACKGROUND,
     borderRadius: 10,
-    width: '80%',
+    width: '100%',
   },
   container: {
     width: '100%',

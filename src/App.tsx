@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import 'react-native-gesture-handler';
 import { MainStackNavigator } from './navigation/';
 
 const App = () => {
