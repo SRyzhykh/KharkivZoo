@@ -31,4 +31,6 @@ export enum SCREENS {
   MAIN = 'Main',
   TABS = 'Tabs',
   SCANER = 'Scaner',
+  AR = 'Ar',
+  MAP = 'Map',
 }

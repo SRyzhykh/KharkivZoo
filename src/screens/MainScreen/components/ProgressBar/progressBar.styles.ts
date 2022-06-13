@@ -9,6 +9,7 @@ export const styles = StyleSheet.create({
     borderRadius: 10,
     alignItems: 'flex-end',
     justifyContent: 'center',
+    zIndex: 99,
   },
   progressContainer: {
     height: SIZES.BAR_HEIGHT,
@@ -16,6 +17,7 @@ export const styles = StyleSheet.create({
     borderRadius: 10,
     width: '100%',
     flexDirection: 'row',
+    zIndex: 100,
   },
   container: {
     width: '100%',

@@ -10,6 +10,7 @@ export const styles = StyleSheet.create({
     borderRadius: 10,
     marginVertical: 10,
     alignItems: 'center',
+    zIndex: 1,
   },
   container: {
     width: '100%',

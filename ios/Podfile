@@ -9,8 +9,6 @@ target 'KharkivZoo' do
 
   permissions_path = '../node_modules/react-native-permissions/ios'
 
-  pod 'Permission-Camera', :path => "#{permissions_path}/Camera"
-
   # Flags change depending on the env values.
   flags = get_default_flags()
 
@@ -22,6 +20,10 @@ target 'KharkivZoo' do
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
+
+  pod 'Permission-Camera', :path => "#{permissions_path}/Camera"
+  pod 'ViroReact', :path => '../node_modules/@viro-community/react-viro/ios/'
+  pod 'ViroKit', :path => '../node_modules/@viro-community/react-viro/ios/dist/ViroRenderer/'
 
   target 'KharkivZooTests' do
     inherit! :complete
